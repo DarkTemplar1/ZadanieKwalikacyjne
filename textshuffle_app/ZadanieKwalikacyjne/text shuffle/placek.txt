@@ -1,0 +1,3 @@
+Django to śwteniy frawemork do buiownadaia aplikacji wbweoych.
+Ta apliakcja pzmrieesza lietry w wyzrwaach, ale pseriwa i oatatnsa litrea poztnaasą na mietjcu.
+Srwpadź, jak dzaiła!
