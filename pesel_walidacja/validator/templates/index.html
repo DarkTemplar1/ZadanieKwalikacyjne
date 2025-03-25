@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Walidator PESEL</title>
+</head>
+<body>
+    <h2>Walidator PESEL</h2>
+
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Sprawdź PESEL</button>
+    </form>
+
+    {% if result %}
+        <p><strong>{{ result }}</strong></p>
+        {% if birthdate %}<p>Data urodzenia: {{ birthdate }}</p>{% endif %}
+        {% if gender %}<p>Płeć: {{ gender }}</p>{% endif %}
+    {% endif %}
+</body>
+</html>
